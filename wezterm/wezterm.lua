@@ -1,5 +1,7 @@
 local wezterm = require 'wezterm'
 return {
+	default_prog = { "/opt/homebrew/bin/nu" }, -- Or the full path if 'nu' isn't in your PATH
+
 	adjust_window_size_when_changing_font_size = false,
 	-- color_scheme = 'termnial.sexy',
 	color_scheme = 'Catppuccin Mocha',
@@ -16,7 +18,7 @@ return {
 	-- 	saturation = 0.5,
 	-- },
 	-- window_background_opacity = 0.92,
-	window_background_opacity = 1.0,
+	window_background_opacity = 0.88,
 	-- window_background_opacity = 0.78,
 	-- window_background_opacity = 0.20,
 	window_decorations = 'RESIZE',
