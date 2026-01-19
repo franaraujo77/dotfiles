@@ -970,3 +970,7 @@ if ($gem_bin | path exists) {
 }
 $env.DIRENV_LOG_FORMAT = ""
 
+source $nu.env-path
+
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
